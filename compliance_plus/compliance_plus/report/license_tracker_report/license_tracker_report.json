@@ -1,0 +1,80 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-07-09 10:43:50.016424",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Elbrit letter head",
+ "letterhead": null,
+ "modified": "2025-07-09 10:43:50.016424",
+ "modified_by": "Administrator",
+ "module": "Compliance Plus",
+ "name": "License Tracker Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Customer",
+ "report_name": "License Tracker Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "CFA Billing Operator"
+  },
+  {
+   "role": "Business Executive"
+  },
+  {
+   "role": "Supply Chain Head"
+  },
+  {
+   "role": "Supply Chain User"
+  },
+  {
+   "role": "MW User"
+  },
+  {
+   "role": "CRM Manager"
+  },
+  {
+   "role": "SS Billing Operator"
+  },
+  {
+   "role": "intern"
+  },
+  {
+   "role": "CRM_Executive"
+  },
+  {
+   "role": "Sample Approver"
+  }
+ ],
+ "timeout": 0
+}
