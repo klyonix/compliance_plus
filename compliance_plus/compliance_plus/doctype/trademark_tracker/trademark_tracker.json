@@ -8,16 +8,23 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "item",
   "document_name",
+  "class",
+  "application_number",
   "type",
-  "issuer_supplier",
-  "issue_date",
-  "expiry_date",
+  "vendor",
+  "vendor_point_of_contact",
+  "vendor_contact_number",
   "column_break_vjhf",
   "status",
+  "issue_date",
+  "expiry_date",
+  "follow_up_status",
+  "application_status",
   "in_charge",
-  "enable_reminder",
   "remind_before_days",
+  "enable_reminder",
   "section_break_bifd",
   "description"
  ],
@@ -33,19 +40,13 @@
    "fieldname": "document_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Document Name",
+   "label": "Trade Name",
    "reqd": 1
   },
   {
    "fieldname": "type",
    "fieldtype": "Data",
    "label": "Type"
-  },
-  {
-   "fieldname": "issuer_supplier",
-   "fieldtype": "Data",
-   "label": "Issuer / Supplier",
-   "reqd": 1
   },
   {
    "default": "Today",
@@ -60,8 +61,7 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Expiry Date",
-   "reqd": 1
+   "label": "Valid Up To"
   },
   {
    "fieldname": "column_break_vjhf",
@@ -73,7 +73,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Active\nExpiring Soon\nExpired\nRenewing",
+   "options": "\nApplied\nFormality Check Pass\nMarked For Exam\nObjected\nAdvertised\nOpposed\nAbandoned\nRegistered",
    "reqd": 1
   },
   {
@@ -105,12 +105,55 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Data",
+   "label": "Vendor"
+  },
+  {
+   "fieldname": "vendor_point_of_contact",
+   "fieldtype": "Data",
+   "label": "Vendor Point of Contact"
+  },
+  {
+   "fieldname": "vendor_contact_number",
+   "fieldtype": "Phone",
+   "label": "Vendor Contact Number"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "application_number",
+   "fieldtype": "Data",
+   "label": "Application Number"
+  },
+  {
+   "fieldname": "follow_up_status",
+   "fieldtype": "Select",
+   "label": "Follow Up Status",
+   "options": "Active Follow Up\nInactive Follow Up"
+  },
+  {
+   "fieldname": "application_status",
+   "fieldtype": "Select",
+   "label": "Application Status",
+   "options": "Active\nExpiring Soon\nExpired\nRenewing"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-24 16:23:33.032116",
+ "modified": "2025-07-08 16:17:01.045615",
  "modified_by": "Administrator",
  "module": "Compliance Plus",
  "name": "Trademark Tracker",
