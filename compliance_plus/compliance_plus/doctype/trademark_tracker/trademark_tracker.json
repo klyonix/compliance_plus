@@ -23,8 +23,10 @@
   "follow_up_status",
   "application_status",
   "in_charge",
-  "remind_before_days",
+  "activity",
+  "activity_deadline",
   "enable_reminder",
+  "remind_before_days",
   "section_break_bifd",
   "description"
  ],
@@ -148,12 +150,22 @@
    "fieldtype": "Select",
    "label": "Application Status",
    "options": "Active\nExpiring Soon\nExpired\nRenewing"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "activity_deadline",
+   "fieldtype": "Date",
+   "label": "Activity Deadline"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-08 16:17:01.045615",
+ "modified": "2025-07-14 17:54:21.846195",
  "modified_by": "Administrator",
  "module": "Compliance Plus",
  "name": "Trademark Tracker",
