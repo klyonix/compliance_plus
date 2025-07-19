@@ -10,6 +10,12 @@ frappe.query_reports["License Tracker Report"] = {
 			"options": "Customer"
 		},
 		{
+			"fieldname": "customer_group",
+			"label": "Customer Group",
+			"fieldtype": "Link",
+			"options": "Customer Group",
+		},
+		{
 			"fieldname": "expiry_in_30_days",
 			"label": "Expiry in Next 30 Days",
 			"fieldtype": "Check",

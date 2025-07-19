@@ -148,13 +148,13 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"compliance_plus.tasks.all"
 # 	],
-# 	"daily": [
-# 		"compliance_plus.tasks.daily"
-# 	],
+	"daily": [
+		"compliance_plus.compliance_plus.custom.license_tracker_cron.send_license_expiry_reminders"
+	],
 # 	"hourly": [
 # 		"compliance_plus.tasks.hourly"
 # 	],
@@ -164,7 +164,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"compliance_plus.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------
