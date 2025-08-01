@@ -8,7 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "item",
+  "brand",
   "document_name",
   "class",
   "application_number",
@@ -109,12 +109,6 @@
    "label": "Description"
   },
   {
-   "fieldname": "item",
-   "fieldtype": "Link",
-   "label": "Item",
-   "options": "Item"
-  },
-  {
    "fieldname": "vendor",
    "fieldtype": "Data",
    "label": "Vendor"
@@ -160,12 +154,18 @@
    "fieldname": "activity_deadline",
    "fieldtype": "Date",
    "label": "Activity Deadline"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-14 17:54:21.846195",
+ "modified": "2025-08-01 18:33:51.241216",
  "modified_by": "Administrator",
  "module": "Compliance Plus",
  "name": "Trademark Tracker",
